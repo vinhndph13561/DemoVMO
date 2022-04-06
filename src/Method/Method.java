@@ -9,6 +9,7 @@ public class Method {
 
 //    Call method
     public static void main(String[] args) {
+
         myMethod();
     }
 }

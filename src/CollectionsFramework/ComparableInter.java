@@ -1,8 +1,10 @@
 package CollectionsFramework;
 
-import ObjectOriented.Object;
+
 
 import java.util.ArrayList;
+import java.util.*;
+import java.util.Collections;
 import java.util.List;
 
 public class ComparableInter implements Comparable<ComparableInter>{
@@ -28,11 +30,12 @@ public class ComparableInter implements Comparable<ComparableInter>{
     }
 
     public static void main(String args[]){
-        List<ComparableInter> al=new ArrayList<>();
-        al.add(new ComparableInter("Vijay",101,"red"));
-        al.add(new ComparableInter("Ajay",106,"blue"));
-        al.add(new ComparableInter("Jai",105,"green"));
+        List<ComparableInter> al=new ArrayList<ComparableInter>();
+        al.add(new ComparableInter("Vinh",101,"red"));
+        al.add(new ComparableInter("Linh",106,"blue"));
+        al.add(new ComparableInter("Minh",105,"green"));
 
+        Collections.sort(al);
         for(ComparableInter st:al){
             System.out.println(st.rollno+" "+st.name+" "+st.color);
         }

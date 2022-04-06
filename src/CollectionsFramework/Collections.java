@@ -1,6 +1,10 @@
 package CollectionsFramework;
 
+import java.util.List;
+
 public class Collections {
+    public static void sort(List<ComparableInter> al) {
+    }
     //The Collection in Java is a framework that provides an architecture
     // to store and manipulate the group of objects.
     //

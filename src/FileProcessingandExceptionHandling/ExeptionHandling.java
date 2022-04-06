@@ -32,6 +32,17 @@ public class ExeptionHandling {
         }
 
     }
+    public void NumberFormatException2() {
+        try{
+            //code that may raise exception
+            String s="abc";
+            int i=Integer.parseInt(s);//NumberFormatException
+        }catch(NumberFormatException e){
+            throw new RuntimeException(e);
+        }
+
+    }
+
     public void ArrayIndexOutOfBoundsException() {
         try{
             //code that may raise exception
